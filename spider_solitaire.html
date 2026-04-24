@@ -474,6 +474,7 @@ var gameDifficulty = {easy:false,medium:true,hard:false};
 */
 
 var theUpdate=`
+<a href="spider_solitaire/goopis_spider_solitaire_how.html">Click here to intall offline!</a><br>
 <a href="https://github.com/docPoacher/spider-solitaire-#spider-solitaire-">Click for updates, Happy Focusing!
 ` ;
 var updates = '<table><tr><td>' + theUpdate + '</td></tr><tr><td><button class="customSubmitButton" onclick="mainMenu()">Exit to Menu</button></td></tr></table>';
@@ -504,7 +505,7 @@ var suitPips = ['&#9824','<svg id="heartPip" style="z-index:0" viewBox="0 0 146 
 
 var highCard = 13;
 
-var menuModeArr =['Classic','Spiderette','9Legs','Tarantula','Will o Wisp','Custom','What is new?','How to play','LOAD GAME!!'];
+var menuModeArr =['Classic','Spiderette','9Legs','Tarantula','Will o Wisp','Custom','Install offline ver?','How to play','LOAD GAME!!'];
 var menuDifficultyArr = ['easy','medium','hard'];
 var menuCustomizeNum = ['decks','suits','legs'];
 
@@ -692,7 +693,7 @@ function menuCustomSubmit(){
 function menuSelection(){
   console.log('hey');
    if(game.version == 'How to play'){
-    window.location.href='https://htmlpreview.github.io/?https://github.com/docPoacher/spider-solitaire-/blob/main/howto4v3.html';
+    window.location.href='spider_solitaire/howto4v3.html';
   }
   if(game.version == 'LOAD GAME!!'){
     loadStatus = 1;
@@ -701,7 +702,7 @@ function menuSelection(){
     getGame();
 		console.log('cookie loaded');
   }
-  if(game.version == 'What is new?'){
+  if(game.version == 'Install offline ver'){
   document.getElementById('banana').innerHTML = updates
   }else if(game.version == 'Custom'){
   console.log('hello?');
